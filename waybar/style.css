@@ -1,0 +1,84 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 21px;
+}
+
+window#waybar {
+    background-color: transparent;
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5); 
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+
+#workspaces.a {
+	margin: 0 15 0;
+}
+#workspaces.b {
+	margin: 0 15 0;
+}
+#workspaces.a button {
+	color: #000000;
+	background-color: transparent;
+}
+#workspaces.a button.active {
+	color: #ffffff;
+	background-color: #000000;
+	border-radius: 10;
+}
+#workspaces.b button {
+	color: #ffffff;
+	background-color: transparent;
+}
+#workspaces.b button.active {
+	color: #000000;
+	background-color: #ffffff;
+	border-radius: 10;
+}
+#memory {
+	background-color: transparent;
+	color: #000000;
+}
+#cpu {
+	background-color: transparent;
+	color: #000000;
+}
+#battery {
+	background-color: transparent;
+	color: #ffffff;
+}
+#custom-hour {
+	color: #000000;
+	font-weight: bold;
+}
+#custom-min {
+	color: #ffffff;
+	font-weight: bold;
+}
+#network {
+	background-color: transparent;
+	color: #000000;
+}
+#pulseaudio {
+	background-color: transparent;
+	color: #000000;
+}
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+label:focus {
+	background-color: #000000;
+}
