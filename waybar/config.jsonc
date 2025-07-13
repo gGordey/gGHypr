@@ -7,10 +7,9 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-		"memory",
 		"cpu",
-		"network",
-		"pulseaudio"
+		"memory",
+		"disk"
     ],	
     "modules-center": [
 		"hyprland/workspaces#a",
@@ -19,6 +18,8 @@
 		"hyprland/workspaces#b",
 	],
     "modules-right": [
+		"network",
+		"pulseaudio",
 		"custom/battery_status",
 		"battery",
 		"custom/sleep",
@@ -114,5 +115,10 @@
 			"3": [], 
 			"4": []
 		},
+	},
+	"disk": {
+		"format": "[ {used} / {total}  ]",
+		"unit": "GB",
+		"format-tooltip": "{specific_used}GB / {specific_total}GB (percentage_used% Used)\n{specific_free}GB Free"
 	}
 }

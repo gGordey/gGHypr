@@ -67,10 +67,13 @@ button {
 }
 #network {
 	background-color: transparent;
-	color: #000000;
+	color: #ffffff;
 }
 #pulseaudio {
 	background-color: transparent;
+	color: #ffffff;
+}
+#disk {
 	color: #000000;
 }
 @keyframes blink {
